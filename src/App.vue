@@ -6,8 +6,11 @@
         <AppSidebar />
         <div class="app__map-wr">
           <MapFilter style="margin-bottom: 20px" />
-          <CustomMap />
-          <CustomVideo />
+          <CustomMap style="margin-bottom: 20px" />
+          <div class="app__video-block">
+            <CustomVideo videoId="vid1" src="https://play.boomstream.com/xmco7zyD" />
+            <CustomVideo videoId="vid2" src="https://play.boomstream.com/3tmsWaVB" />
+          </div>
         </div>
       </main>
     </div>
@@ -20,6 +23,9 @@ import CustomMap from './components/map/CustomMap.vue'
 import AppHeader from './components/AppHeader.vue'
 import AppSidebar from './components/AppSidebar.vue'
 import CustomVideo from './components/CustomVideo.vue'
+import videojs from 'video.js'
+import * as BoomstreamHlsPlugin from 'videojs-hls-boomstream'
+BoomstreamHlsPlugin.init(videojs)
 </script>
 
 <style lang="scss" scoped>
@@ -36,5 +42,10 @@ import CustomVideo from './components/CustomVideo.vue'
   padding: 20px;
   background-color: #f9fafc;
   position: relative;
+}
+.app__video-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 </style>

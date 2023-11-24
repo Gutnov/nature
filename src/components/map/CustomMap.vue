@@ -13,7 +13,7 @@ onMounted(() => {
 <style lang="scss">
 #map {
   width: 100%;
-  height: 600px;
+  height: 400px;
   max-height: 100%;
   border-radius: 15px;
 }

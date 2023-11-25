@@ -3,7 +3,7 @@ import geoData from './server.json'
 import L from 'leaflet'
 
 const paintMap = () => {
-  const map = L.map('map').setView([46.4297765243137, 55.81586297018568], 3)
+  const map = L.map('map').setView([54.4297765243137, 40.81586297018568], 6)
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     minZoom: 3

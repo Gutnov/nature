@@ -9,7 +9,7 @@
           <CustomMap style="margin-bottom: 20px" />
           <div class="app__video-block">
             <CustomVideo videoId="vid1" src="https://play.boomstream.com/xmco7zyD" />
-            <CustomVideo videoId="vid2" src="https://play.boomstream.com/3tmsWaVB" />
+            <CustomVideo videoId="vid2" src="https://play.boomstream.com/MS4K9fcg" />
           </div>
         </div>
       </main>
@@ -47,5 +47,14 @@ BoomstreamHlsPlugin.init(videojs)
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .app__main {
+    display: block;
+  }
+  .app__video-block {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

@@ -57,4 +57,10 @@ const time = ref('Почасовой')
 .app-sidebar__title {
   margin-bottom: 16px;
 }
+
+@media (max-width: 900px) {
+  .app-sidebar {
+    width: 100%;
+  }
+}
 </style>

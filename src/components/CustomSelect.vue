@@ -134,14 +134,11 @@ const filterFn = (val, update) => {
   }
 }
 
-.custom-select {
-  margin-right: 0 !important;
-  margin-bottom: 20px;
-}
-
 @media (max-width: 900px) {
   .custom-select {
     max-width: 90vw;
+    margin-right: 0 !important;
+    margin-bottom: 20px;
   }
 }
 </style>

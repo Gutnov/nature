@@ -4,7 +4,7 @@
       <h2 class="map-filter__title">Загрязняющее вещество</h2>
       <CustomSelect
         v-model="substance"
-        :items="['Оксид углерода СО', 'Оксид водорода СО2']"
+        :items="['Оксид углерода СО', 'Диоксид азота No2']"
         style="margin-right: 20px; flex: 1; flex-shrink: 1"
       />
     </div>

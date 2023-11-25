@@ -46,10 +46,10 @@ const time = ref('Почасовой')
   &::before {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 300%;
     height: 100%;
     background-color: #fff;
-    left: -100%;
+    left: -300%;
     top: 0;
   }
 }
@@ -61,6 +61,7 @@ const time = ref('Почасовой')
 @media (max-width: 900px) {
   .app-sidebar {
     width: 100%;
+    height: auto;
   }
 }
 </style>
